@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Hashcode 2018 Visualization</title>
+</head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/5.2.1/pixi.min.js"></script>
+<div>
+    Hashcode 2018 Visualization
+</div>
+<textarea type="text" id="inputFile" cols="62" rows="6" placeholder="Input File"></textarea><br>
+<textarea type="text" id="outputFile" cols="62" rows="6" placeholder="Output File"></textarea>
+<button type="button" id="loadButton">Load</button>
+<div style="margin-top: 40px;"></div>
+<div style="display: inline-block; margin: 0;">
+    <button type="button" id="firstFrameButton" style="float: left;">
+        First
+    </button>
+    <button type="button" id="previousButton" style="float: left; margin-left: 4px;">
+        Previous
+    </button>
+    <div id="frameNr" style="float: left; margin-left: 10px; margin-left: 4px;">
+        Frame 0 / 0
+    </div>
+    <button type="button" id="nextButton" style="float: left;margin-left: 4px;">
+        Next
+    </button>
+    <button type="button" id="lastFrameButton" style="float: left;margin-left: 4px;">
+        Last
+    </button>
+    <div id="score" style="float: left; margin-left: 100px;">
+        Score 0
+    </div>
+</div>
+<div id="canvas"></div>
+</body>
+<script src="script.js"></script>
+</html>
